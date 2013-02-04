@@ -1,4 +1,4 @@
-package newsreader.classifier;
+package newsreader;
 
 public class NewsItem {
 	public NewsItem(String url, String content, ClassificationStatus classificationStatus){

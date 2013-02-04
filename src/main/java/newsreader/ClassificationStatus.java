@@ -1,4 +1,4 @@
-package newsreader.classifier;
+package newsreader;
 
 public enum ClassificationStatus {
 	Undefined,

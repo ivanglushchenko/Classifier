@@ -4,6 +4,9 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
+import newsreader.ClassificationStatus;
+import newsreader.NewsItem;
+
 import org.htmlcleaner.*;
 
 import com.sun.syndication.feed.synd.*;
@@ -52,8 +55,8 @@ public class FeedGetter {
 	        	list.add(new NewsItem(entry.getUri(), content, ClassificationStatus.Like));
 	        }
 		}
-		catch (Exception exc){
-			System.out.println(exc.toString());
+		catch (Exception e){
+			System.out.println(e.toString());
 		}
 		return list;
 	}
